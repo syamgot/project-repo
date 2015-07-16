@@ -1,0 +1,3 @@
+[submodule "server/chef-repo"]
+	path = server/chef-repo
+	url = https://github.com/syamgot/chef-repo
