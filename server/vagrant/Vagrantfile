@@ -3,11 +3,11 @@
 
 Vagrant.configure(2) do |config|
 
-	config.vm.box = "ubuntu/trusty64"
- 	config.vm.synced_folder "../share", "/share"
- 	config.vm.network :private_network, ip: "10.0.1.100"
+	config.vm.box = "%BOX%"
+ 	config.vm.synced_folder "../workspace", "/vagrant"
+ 	config.vm.network :private_network, ip: "%IP%"
 
-	define_machine_name config, "vagrant-ubuntu"
+	define_machine_name config, "%PROJECT_NAME%"
 
 end
 
