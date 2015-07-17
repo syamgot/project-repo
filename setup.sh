@@ -68,6 +68,8 @@ log 'LOG' 'chef solo prepare'
 cd $CHEF_PATH
 knife solo prepare $PROJECT_NAME
 wait
+knife solo cook $PROJECT_NAME
+wait
 log 'LOG' "create node file and edit it. (${CHEF_PATH}/nodes/${PROJECT_NAME}.json)"
 
 
