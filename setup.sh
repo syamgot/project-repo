@@ -60,6 +60,9 @@ if [ $4 != 'running' ]; then
 	exit 1
 fi	
 vagrant ssh-config --host $PROJECT_NAME >> ~/.ssh/config
+wait
+vagrant sandbox on
+wait
 
 
 
