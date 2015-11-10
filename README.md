@@ -37,7 +37,7 @@ $ knife solo cook xeen-nhs
 
 ````
 $ vagrant install
-$ vagrant sandbox plugin install
+$ vagrant plugin install sahara
 ````
 
 #### chef
