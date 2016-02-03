@@ -23,7 +23,7 @@ $ sh setup.sh
 # 必要なレシピを指定してcook
 $ cd chef-repo
 $ vim nodes/project-name.json
-$ knife solo cook xeen-nhs
+$ knife solo cook project-name
 ````
 
 ## ホストで必要なアプリとかプラグインとか
