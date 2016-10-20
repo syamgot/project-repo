@@ -4,7 +4,7 @@
 
 
 
-BOX='ubuntu/trusty64'
+BOX='ubuntu/xenial64'
 PROJECT_NAME='syamgot-hoge'
 IP='10.0.1.110'
 MEMORY='1024'
