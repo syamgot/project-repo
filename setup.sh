@@ -7,6 +7,7 @@
 BOX='ubuntu/trusty64'
 PROJECT_NAME='syamgot-hoge'
 IP='10.0.1.110'
+MEMORY='1024'
 
 
 
@@ -45,6 +46,7 @@ BOX=`echo $BOX | sed -e 's/\//\\\\\//g'`
 grep -l '%BOX%' $VAGRANTFILE_PATH | xargs sed -i '' -e "s/%BOX%/$BOX/g"
 grep -l '%PROJECT_NAME%' $VAGRANTFILE_PATH | xargs sed -i '' -e "s/%PROJECT_NAME%/$PROJECT_NAME/g"
 grep -l '%IP%' $VAGRANTFILE_PATH | xargs sed -i '' -e "s/%IP%/$IP/g"
+grep -l '%MEMORY%' $VAGRANTFILE_PATH | xargs sed -i '' -e "s/%MEMORY%/$MEMORY/g"
 
 
 log 'LOG' 'vagrant up'

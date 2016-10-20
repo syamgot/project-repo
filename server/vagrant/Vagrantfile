@@ -15,6 +15,7 @@ end
 def define_machine_name(config, name)
 	config.vm.provider :virtualbox do |vbox|
 		vbox.name = name
+		vbox.memory = %MEMORY%
 	end
 end
 
